@@ -2,15 +2,15 @@
 <manifest>
 
     <!-- Manifest -->
-    <project path="manifest" name="gokulbalram/manifest" remote="github" />
+    <project path="manifest" name="gokulbalram/manifest" remote="github" revision="quartz" />
 
     <remove-project name="platform/frameworks/base" />
-    <project path="frameworks/base" name="gokulbalram/android_frameworks_base" remote="github" />
+    <project path="frameworks/base" name="gokulbalram/android_frameworks_base" remote="github" revision="quartz" />
 
     <remove-project name="platform/packages/apps/Settings" />
-    <project path="packages/apps/Settings" name="gokulbalram/android_packages_apps_Settings" remote="github" />
+    <project path="packages/apps/Settings" name="gokulbalram/android_packages_apps_Settings" remote="github" revision="quartz" />
 
-    <project path="vendor/pa" name="gokulbalram/android_vendor_pa" remote="github" >
+    <project path="vendor/pa" name="gokulbalram/android_vendor_pa" remote="github" revision="quartz" >
       <copyfile src="build.sh" dest="rom-build.sh" />
     </project>
 
