@@ -856,4 +856,7 @@
   <!-- Paranoid Android additions -->
   <include name="manifests/aospa.xml"/>
 
+  <!-- My additions -->
+  <include name="manifests/gokulbalram.xml"/>
+
 </manifest>

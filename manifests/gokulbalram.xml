@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Manifest -->
+    <project path="manifest" name="gokulbalram/manifest" remote="github" />
+
+    <remove-project name="platform/frameworks/base" />
+    <project path="frameworks/base" name="gokulbalram/android_frameworks_base" remote="github" />
+
+    <remove-project name="platform/packages/apps/Settings" />
+    <project path="packages/apps/Settings" name="gokulbalram/android_packages_apps_Settings" remote="github" />
+
+    <project path="vendor/pa" name="gokulbalram/android_vendor_pa" remote="github" >
+      <copyfile src="build.sh" dest="rom-build.sh" />
+    </project>
+
+
+</manifest>

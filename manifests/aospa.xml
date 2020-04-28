@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- Manifest -->
-  <project path="manifest" name="AOSPA/manifest" remote="aospa" groups="aospa" />
-
   <!-- Build repositories -->
   <remove-project name="platform/build" />
   <project path="build/make" name="AOSPA/android_build" remote="aospa" groups="aospa" >
@@ -57,8 +54,6 @@
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/av" />
   <project path="frameworks/av" name="AOSPA/android_frameworks_av" remote="aospa" groups="aospa" />
-  <remove-project name="platform/frameworks/base" />
-  <project path="frameworks/base" name="AOSPA/android_frameworks_base" remote="aospa" groups="aospa" />
   <remove-project name="platform/frameworks/native" />
   <project path="frameworks/native" name="AOSPA/android_frameworks_native" remote="aospa" groups="aospa" />
   <remove-project name="platform/frameworks/opt/net/wifi" />
@@ -82,8 +77,6 @@
   <project path="packages/apps/Nfc" name="AOSPA/android_packages_apps_Nfc" remote="aospa" groups="aospa" />
   <remove-project name="platform/packages/apps/PackageInstaller"/>
   <project path="packages/apps/PermissionController" name="AOSPA/android_packages_apps_PackageInstaller" remote="aospa" groups="aospa" />
-  <remove-project name="platform/packages/apps/Settings" />
-  <project path="packages/apps/Settings" name="AOSPA/android_packages_apps_Settings" remote="aospa" groups="aospa" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <project path="packages/apps/SettingsIntelligence" name="AOSPA/android_packages_apps_SettingsIntelligence" remote="aospa" groups="aospa" />
   <remove-project name="platform/packages/apps/ThemePicker" />
@@ -152,9 +145,6 @@
   <project path="system/vold" name="AOSPA/android_system_vold" remote="aospa" groups="aospa" />
 
   <!-- Vendor -->
-  <project path="vendor/pa" name="AOSPA/android_vendor_pa" remote="aospa" groups="aospa" >
-    <copyfile src="build.sh" dest="rom-build.sh" />
-  </project>
   <remove-project name="platform/vendor/codeaurora/telephony" />
   <project path="vendor/codeaurora/commonsys/telephony" name="AOSPA/android_vendor_codeaurora_commonsys_telephony" remote="aospa" groups="aospa" />
   <project path="vendor/pa/biometrics-face" name="AOSPA/android_vendor_pa-biometrics-face" remote="aospa" groups="aospa" />
